@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Yocto-TvRelay</string>
+    <string name="browse_title">List of relays</string>
+
+    <!-- Error messages -->
+    <string name="oops">Oops</string>
+</resources>
