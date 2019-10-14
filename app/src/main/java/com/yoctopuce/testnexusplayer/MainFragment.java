@@ -66,7 +66,7 @@ public class MainFragment extends BrowseFragment
             }
         };
 
-        YoctoIntentService.requestRelays(getActivity());
+
     }
 
     @Override
@@ -74,6 +74,7 @@ public class MainFragment extends BrowseFragment
     {
         super.onResume();
         getActivity().registerReceiver(_updateReceiver, new IntentFilter(RelayUpdateReceiver.ACTION_RELAY_STATE));
+        YoctoIntentService.requestRelays(getActivity());
     }
 
     @Override
